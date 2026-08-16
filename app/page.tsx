@@ -21,29 +21,52 @@ const navItems = [
 const experience = [
   {
     title: "1990minds & Co",
-    role: "Data Consultant",
-    period: "Jun 2022 - Jul 2024",
+    role: "Data Analyst",
+    period: "Jan 2022 - Jul 2024",
     location: "Bengaluru, India",
     bullets: [
-      "Integrated live data endpoints into a client’s AI-powered NoSQL application, structuring and validating datasets for real-time visualization and managing application state to deliver a 28% improvement in data retrieval and response speed for users.",
-      "Performed root cause analysis on 150+ production defects across client codebases, identifying recurring failure patterns and data inconsistencies to reduce repeat defect reports by 30% and improve reliability of client-facing reporting workflows.",
-      "Served as a liaison between clients and engineering teams, eliciting business requirements, translating them into technical specifications, and instituting structured review cycles that accelerated feature delivery and raised quality standards.",
-      "Standardized reusable UI components for data-driven client applications, optimizing rendering of dynamic content to cut page load times by 35% and improve the end-user experience of dashboards and reporting interfaces.",
+      "Defined and solved complex business problems for 5+ global clients through quantitative analysis and operations research methodologies, developing KPI frameworks that cut requirement rework by ~20%.",
+      "Built analytical models and forecasting engines using Python and SQL on Big Data, delivering quantitative analysis and forecasting recommendations that saved clients 15+ hours/month on report generation.",
+      "Applied statistical hypothesis testing to perform root-cause analysis on 150+ production defects from Big Data warehouse systems, establishing a source of truth and reducing repeat reporting errors by 30%.",
+      "Optimized manual reporting workflows with Python automation, reducing dashboard refresh times by 35% and freeing 10+ hours/week for model development and analytical delivery.",
     ],
   },
   {
-    title: "Electrowing Technologies Private Limited",
-    role: "Business Analyst Intern",
+    title: "Jagate Industries",
+    role: "Data Analyst Intern",
+    period: "Sep 2021 - Jan 2022",
+    location: "Bengaluru, India",
+    bullets: [
+      "Formulated hypotheses and designed process tests on order-to-fulfillment workflows, uncovering six bottlenecks and shortening cycle time by 3 days through targeted optimization.",
+      "Developed demand forecasting models using Python machine learning (regression, XGBoost) on 3+ years of sales and inventory data, building a reliable analytical baseline that supported revenue management planning and margin analysis.",
+      "Integrated SQL operational data with Python ML outputs into an executive Tableau dashboard, delivering demand forecasting results, anomaly detection flags, and revenue management KPIs to senior stakeholders.",
+    ],
+  },
+  {
+    title: "Electrowing Technologies Pvt Ltd",
+    role: "Data Analyst Intern",
     period: "Jun 2021 - Aug 2021",
     location: "Bengaluru, India",
     bullets: [
-      "Analyzed system and log data to diagnose recurring failures in a Router UPS monitoring application, identifying performance bottlenecks that, once resolved, achieved a 12% improvement in system reliability.",
-      "Built Tableau dashboards and performance tracking reports analyzing operational data for senior engineering stakeholders, surfacing insights that informed a 10% boost in system optimization efforts.",
+      "Diagnosed recurring application failures by writing complex SQL queries and applying statistical analysis to identify root causes, improving system reliability by 12%.",
+      "Delivered professional presentations translating statistical findings into targeted engineering decisions, decreasing monthly incident count by 12%.",
+      "Partnered with IT to implement prototype solutions by optimizing data processing workflows via Big Data and cloud analytics platforms, cutting processing time by 25%.",
     ],
   },
 ];
 
 const projects = [
+  {
+    title: "Airline Revenue Optimization & Demand Forecasting Engine",
+    role: "Python • R • SciPy • Scikit-learn • SQL",
+    period: "Oct 2021 - Mar 2022",
+    location: "Bengaluru, India",
+    bullets: [
+      "Designed a mathematical model simulating airline seat inventory allocation across 50+ fare classes using linear programming and optimization, maximizing projected revenue per flight by ~18% over a naïve baseline.",
+      "Built a demand forecasting engine using time-series regression and XGBoost in Python and R, achieving 22% RMSE reduction vs. baseline and formulating statistical hypothesis tests to validate model assumptions.",
+      "Developed prototype solutions structured for integration into a live revenue management system, validating end-to-end model pipeline from data ingestion through optimization output.",
+    ],
+  },
   {
     title: "JSOM Smart Advisor",
     role: "AI Chatbot & Website Accessibility Audit",
@@ -129,15 +152,38 @@ const education = [
 const skillGroups = [
   {
     title: "Core",
-    items: ["Python", "SQL", "R", "Java", "JavaScript"],
+    items: [
+      "Python",
+      "SQL",
+      "R",
+      "Java",
+      "JavaScript",
+      "Advanced Excel (Pivot Tables)",
+    ],
   },
   {
     title: "Data & Visualization",
-    items: ["Tableau", "Power BI", "Excel", "Snowflake", "PostgreSQL", "MySQL"],
+    items: [
+      "Tableau",
+      "Power BI",
+      "Power Query",
+      "Excel",
+      "GIS",
+      "Snowflake",
+      "PostgreSQL",
+      "MySQL",
+    ],
   },
   {
     title: "Machine Learning & AI",
     items: [
+      "Operations Research",
+      "Optimization",
+      "Statistical Modeling",
+      "Hypothesis Testing",
+      "Regression Analysis",
+      "Predictive Forecasting",
+      "Anomaly Detection",
       "Random Forest",
       "XGBoost",
       "Neural Networks",
@@ -145,6 +191,8 @@ const skillGroups = [
       "Model Evaluation",
       "RAG",
       "LLM APIs",
+      "Prompt Engineering",
+      "LangChain",
     ],
   },
   {
@@ -154,9 +202,21 @@ const skillGroups = [
       "Next.js",
       "HTML/CSS",
       "Git",
+      "Jira",
+      "MATLAB",
       "SAP ERP",
       "SharePoint",
-      "MATLAB",
+    ],
+  },
+  {
+    title: "Business & Process",
+    items: [
+      "Revenue Analysis",
+      "Requirements Gathering",
+      "Stakeholder Management",
+      "Business Process Mapping",
+      "Data Governance",
+      "Agile/Scrum",
     ],
   },
 ];
