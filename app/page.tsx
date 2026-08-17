@@ -229,21 +229,21 @@ const highlights = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(99,102,241,0.16),_transparent_28%),linear-gradient(135deg,_#f8fbff_0%,_#f6f7ff_100%)] text-slate-900">
-      <header className="sticky top-0 z-20 border-b border-slate-200/70 bg-white/70 backdrop-blur-xl">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.25),_transparent_28%),linear-gradient(135deg,_#0b1329_0%,_#0a1120_100%)] text-slate-100">
+      <header className="sticky top-0 z-20 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
           <a
             href="#"
-            className="text-lg font-semibold tracking-tight text-slate-950"
+            className="text-lg font-semibold tracking-tight text-white"
           >
             Pramit Shivakumar Jagate
           </a>
-          <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+          <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="transition hover:text-slate-950"
+                className="transition hover:text-white"
               >
                 {item.label}
               </a>
@@ -251,7 +251,7 @@ export default function Home() {
           </nav>
           <a
             href="#contact"
-            className="rounded-full border border-slate-300 bg-slate-950 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+            className="rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-slate-100"
           >
             Let&apos;s connect
           </a>
@@ -273,10 +273,7 @@ export default function Home() {
 
         <AboutSection
           title="Beyond the resume: the person behind the work."
-          body={[
-            "Outside of academics and career, I am someone who values curiosity, growth, and staying grounded in the things that keep me inspired. I enjoy exploring new ideas, learning through hands-on experiences, and building work that feels meaningful.",
-            "This space is meant to capture the broader side of who I am — my interests, mindset, and the experiences that shape how I approach life and work.",
-          ]}
+          subtitle="Outside of academics and career, I am someone who values curiosity, growth, and staying grounded in the things that keep me inspired. I enjoy exploring new ideas, learning through hands-on experiences, and building work that feels meaningful."
         />
 
         <ContactSection
@@ -286,7 +283,7 @@ export default function Home() {
         />
       </main>
 
-      <footer className="border-t border-slate-200 bg-white/60 py-6 text-center text-sm text-slate-500">
+      <footer className="border-t border-white/10 bg-slate-950/60 py-6 text-center text-sm text-slate-400">
         © 2026 Pramit Shivakumar Jagate. Built with Next.js.
       </footer>
     </div>
