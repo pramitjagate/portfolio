@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Baloo_2 } from "next/font/google";
+import { Geist, Geist_Mono, Baloo_2, Fraunces, Caveat } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +17,16 @@ const baloo = Baloo_2({
   subsets: ["latin"],
 });
 
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Pramit Shivakumar Jagate | Data Analyst Portfolio",
   description:
@@ -31,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${baloo.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${baloo.variable} ${fraunces.variable} ${caveat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

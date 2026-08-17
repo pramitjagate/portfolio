@@ -1,4 +1,5 @@
 import { Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
 
 type ProjectItem = {
   title: string;
@@ -15,8 +16,12 @@ type ProjectsSectionProps = {
 
 export default function ProjectsSection({ items }: ProjectsSectionProps) {
   return (
-    <section
+    <motion.section
       id="projects"
+      initial={{ opacity: 0, y: 48 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.6 }}
       className="rounded-[2rem] border border-white/10 bg-slate-950 p-8 text-white shadow-[0_12px_40px_rgba(15,23,42,0.15)] lg:p-10"
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -35,9 +40,15 @@ export default function ProjectsSection({ items }: ProjectsSectionProps) {
       </div>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-3">
-        {items.map((item) => (
-          <details
+        {items.map((item, index) => (
+          <motion.div
             key={item.title}
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+          <details
             className="group rounded-[1.25rem] border border-white/10 bg-white/5 p-6"
           >
             <summary className="cursor-pointer list-none">
@@ -83,8 +94,9 @@ export default function ProjectsSection({ items }: ProjectsSectionProps) {
               </ul>
             </div>
           </details>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,4 +1,5 @@
 import { Mail, Globe } from "lucide-react";
+import { motion } from "framer-motion";
 
 type ContactSectionProps = {
   email: string;
@@ -12,8 +13,12 @@ export default function ContactSection({
   linkedin,
 }: ContactSectionProps) {
   return (
-    <section
+    <motion.section
       id="contact"
+      initial={{ opacity: 0, y: 48 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.6 }}
       className="rounded-[2rem] border border-white/10 bg-slate-950 p-8 text-white shadow-[0_12px_40px_rgba(15,23,42,0.15)] lg:p-10"
     >
       <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
@@ -54,6 +59,6 @@ export default function ContactSection({
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

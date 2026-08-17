@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type AboutCard = {
   icon: string;
   title: string;
@@ -122,8 +124,12 @@ const accents = [
 
 export default function AboutSection({ title, subtitle }: AboutSectionProps) {
   return (
-    <section
+    <motion.section
       id="about"
+      initial={{ opacity: 0, y: 48 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.6 }}
       className="relative overflow-hidden rounded-[2rem] border-2 border-dashed border-white/15 bg-slate-950 p-8 text-white shadow-[0_12px_40px_rgba(15,23,42,0.15)] lg:p-10"
     >
       {/* corner "box" pins, board-game-box style */}
@@ -181,7 +187,14 @@ export default function AboutSection({ title, subtitle }: AboutSectionProps) {
             const isStart = index === 0;
             const isFinish = index === cards.length - 1;
             return (
-              <div key={card.title} className={`relative ${cardPositions[index]}`}>
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 32, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.4, delay: index * 0.12 }}
+                className={`relative ${cardPositions[index]}`}
+              >
                 <div
                   className={`group relative rounded-xl border-2 bg-slate-900 p-6 pt-10 text-center shadow-[0_4px_16px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1 ${accent.border} ${accent.hoverBorder} ${accent.glow}`}
                 >
@@ -217,11 +230,11 @@ export default function AboutSection({ title, subtitle }: AboutSectionProps) {
                     {card.body}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

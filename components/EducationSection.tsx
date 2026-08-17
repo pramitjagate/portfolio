@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import { motion } from "framer-motion";
 
 type EducationItem = {
   school: string;
@@ -14,8 +15,12 @@ type EducationSectionProps = {
 
 export default function EducationSection({ items }: EducationSectionProps) {
   return (
-    <section
+    <motion.section
       id="education"
+      initial={{ opacity: 0, y: 48 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.6 }}
       className="rounded-[2rem] border border-white/10 bg-slate-950 p-8 text-white shadow-[0_12px_40px_rgba(15,23,42,0.15)] lg:p-10"
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -34,9 +39,13 @@ export default function EducationSection({ items }: EducationSectionProps) {
       </div>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-2">
-        {items.map((item) => (
-          <article
+        {items.map((item, index) => (
+          <motion.article
             key={item.school}
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="rounded-[1.25rem] border border-white/10 bg-white/5 p-6"
           >
             <div className="flex items-center justify-between">
@@ -64,9 +73,9 @@ export default function EducationSection({ items }: EducationSectionProps) {
                 </p>
               </details>
             ) : null}
-          </article>
+          </motion.article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -230,8 +230,8 @@ const highlights = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.25),_transparent_28%),linear-gradient(135deg,_#0b1329_0%,_#0a1120_100%)] text-slate-100">
-      <header className="sticky top-0 z-20 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+      <header className="sticky top-0 z-20 backdrop-blur-md">
+        <div className="flex w-full items-center justify-between px-6 py-4 sm:px-10 lg:px-16 xl:px-24">
           <a
             href="#"
             className="text-lg font-semibold tracking-tight text-white"
@@ -258,29 +258,36 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-10 lg:px-8 lg:py-16">
-        <HeroSection name="Pramit Shivakumar Jagate" />
-
-        <ExperienceSection items={experience} />
-
-        <ProjectsSection items={projects} />
-
-        <SkillsSection groups={skillGroups} />
-
-        <EducationSection items={education} />
-
-        {/* <HighlightsSection items={highlights} /> */}
-
-        <AboutSection
-          title="Beyond the resume: the person behind the work."
-          subtitle="Outside of academics and career, I am someone who values curiosity, growth, and staying grounded in the things that keep me inspired. I enjoy exploring new ideas, learning through hands-on experiences, and building work that feels meaningful."
-        />
-
-        <ContactSection
+      <main className="flex flex-col">
+        <HeroSection
+          name="Pramit Shivakumar Jagate"
           email="pramitsjagate@gmail.com"
           github="https://github.com/pramitjagate"
           linkedin="https://www.linkedin.com/in/pramit-jagate"
         />
+
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-10 lg:px-8 lg:py-16">
+          <ExperienceSection items={experience} />
+
+          <ProjectsSection items={projects} />
+
+          <SkillsSection groups={skillGroups} />
+
+          <EducationSection items={education} />
+
+          {/* <HighlightsSection items={highlights} /> */}
+
+          <AboutSection
+            title="Beyond the resume: the person behind the work."
+            subtitle="Outside of academics and career, I am someone who values curiosity, growth, and staying grounded in the things that keep me inspired. I enjoy exploring new ideas, learning through hands-on experiences, and building work that feels meaningful."
+          />
+
+          <ContactSection
+            email="pramitsjagate@gmail.com"
+            github="https://github.com/pramitjagate"
+            linkedin="https://www.linkedin.com/in/pramit-jagate"
+          />
+        </div>
       </main>
 
       <footer className="border-t border-white/10 bg-slate-950/60 py-6 text-center text-sm text-slate-400">
