@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 type ProjectItem = {
   title: string;
   role: string;
-  period: string;
-  location: string;
+  period?: string;
+  location?: string;
   link?: string;
   bullets: string[];
 };
@@ -60,9 +60,13 @@ export default function ProjectsSection({ items }: ProjectsSectionProps) {
                   <p className="mt-3 text-sm font-medium text-slate-300">
                     {item.role}
                   </p>
-                  <p className="mt-1 text-sm text-slate-400">
-                    {item.period} • {item.location}
-                  </p>
+                  {item.period || item.location ? (
+                    <p className="mt-1 text-sm text-slate-400">
+                      {item.period}
+                      {item.period && item.location ? " • " : null}
+                      {item.location}
+                    </p>
+                  ) : null}
                 </div>
                 <div className="flex items-center gap-2">
                   <Briefcase size={18} className="text-violet-400" />

@@ -59,8 +59,6 @@ const projects = [
   {
     title: "Airline Revenue Optimization & Demand Forecasting Engine",
     role: "Python • R • SciPy • Scikit-learn • SQL",
-    period: "Oct 2021 - Mar 2022",
-    location: "Bengaluru, India",
     bullets: [
       "Designed a mathematical model simulating airline seat inventory allocation across 50+ fare classes using linear programming and optimization, maximizing projected revenue per flight by ~18% over a naïve baseline.",
       "Built a demand forecasting engine using time-series regression and XGBoost in Python and R, achieving 22% RMSE reduction vs. baseline and formulating statistical hypothesis tests to validate model assumptions.",
@@ -70,8 +68,6 @@ const projects = [
   {
     title: "JSOM Smart Advisor",
     role: "AI Chatbot & Website Accessibility Audit",
-    period: "Mar 2026 - May 2026",
-    location: "Dallas, TX",
     link: "https://smartadvisor-zkpbruk7azu22m8ffxjlzp.streamlit.app/",
     bullets: [
       "Built an AI-powered academic advising chatbot with a team of 5 using Claude and Grok APIs with RAG architecture, enabling real-time, structured resolution of student queries.",
@@ -81,8 +77,6 @@ const projects = [
   {
     title: "Loan Origination Portal — Full-Stack Banking Application",
     role: "Full-stack banking application",
-    period: "Sep 2025 - Dec 2025",
-    location: "Dallas, TX",
     link: "https://loan-iq-frontend-ecru.vercel.app/",
     bullets: [
       "Engineered a full-stack loan portal in React and Node.js with a 5-step applicant form, JWT role-based authentication across 2 user roles, and a dedicated underwriter dashboard, centralizing end-to-end loan intake for up to 500 concurrent applications.",
@@ -92,8 +86,6 @@ const projects = [
   {
     title: "Visual Analytics of the COVID-19 Boom in Global Video Game Sales",
     role: "Interactive dashboard project",
-    period: "Sep 2025 - Dec 2025",
-    location: "Dallas, TX",
     bullets: [
       "Investigated COVID-19’s impact on global gaming demand by building parameterized Tableau dashboards across 16,598 records, segmenting by platform, genre, publisher, and region.",
       "Tested pandemic-era demand hypotheses through interactive visualizations and found results aligned with Newzoo data showing 22% global gaming revenue growth from 2019 to 2021.",
@@ -102,8 +94,6 @@ const projects = [
   {
     title: "Wildfire Risk Prediction Using Ensemble Machine Learning Models",
     role: "Machine learning and explainable AI project",
-    period: "Jan 2025 - May 2025",
-    location: "Dallas, TX",
     bullets: [
       "Built an ensemble wildfire prediction model combining Random Forest and XGBoost on satellite, climate, and terrain data, achieving 81% recall to enhance early fire-risk detection and resource planning across California.",
       "Engineered and optimized a 90K+ record dataset with spatiotemporal features, applying SHAP analysis and feature importance methods to surface key wildfire drivers such as temperature, NDVI, and humidity for decision-ready insights.",
@@ -113,8 +103,6 @@ const projects = [
     title:
       "Econometric Panel Study of Unemployment and Mass Shootings in the U.S",
     role: "Econometrics research project",
-    period: "Jan 2025 - May 2025",
-    location: "Dallas, TX",
     bullets: [
       "Constructed a 2,500+ state–month panel dataset merging mass shooting records with BLS unemployment and minimum wage policy indicators to enable rigorous causal analysis of labor market effects.",
       "Estimated fixed-effects, lagged dependent variable, and difference-in-differences econometric models, finding no statistically robust short-run causal impact of unemployment or wage increases on mass shooting incidence.",
@@ -123,8 +111,6 @@ const projects = [
   {
     title: "Heart Disease Prediction and Analysis",
     role: "Machine learning project",
-    period: "Jan 2025 - May 2025",
-    location: "Dallas, TX",
     bullets: [
       "Developed a robust heart disease prediction model using machine learning techniques like Random Forest, Decision Tree, and Neural Network, achieving an accuracy of ~91.44%.",
       "Identified key risk factors such as BMI, Age, Physical Health, and Mental Health through feature selection, enabling improved prediction accuracy and actionable insights for heart disease prevention.",
