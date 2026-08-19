@@ -57,6 +57,15 @@ const experience = [
 
 const projects = [
   {
+    title: "Ecommerce Analytics and Forecasting Platform",
+    role: "Tableau • SQL • Python • Prophet",
+    bullets: [
+      "Built an end-to-end analytics platform over a 222K order, 3.5 year dataset, modeling raw events into six SQL mart tables that feed three Tableau views for executive KPIs, customer concentration, and operations.",
+      "Benchmarked Prophet against SARIMAX and a naive baseline, landing 9.9% daily MAPE versus 16.9% naive and giving stakeholders a defensible planning number.",
+      "Designed a dual detector anomaly system on forecast residuals and fulfillment baselines that recovered all five injected incidents at a 0.72% false positive rate, gated by a 34 check validation suite.",
+    ],
+  },
+  {
     title: "Airline Revenue Optimization & Demand Forecasting Engine",
     role: "Python • R • SciPy • Scikit-learn • SQL",
     bullets: [
