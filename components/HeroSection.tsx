@@ -33,7 +33,7 @@ export default function HeroSection({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative flex min-h-[calc(100svh-4.5rem)] w-full flex-col justify-center overflow-hidden py-12 text-white lg:py-16"
+      className="relative flex min-h-[calc(100svh-4.5rem)] w-full flex-col justify-center overflow-hidden py-12 text-white lg:pt-16 lg:pb-32"
     >
       {scatterDots.map((dot, index) => (
         <span
